@@ -1,0 +1,38 @@
+##Problem Set 1
+##Name: Borja Gozalo
+
+##Problem 2.
+##Write a program that computes the sum of the logarithms of all the primes from 2 to some
+##number n, and print out the sum of the logs of the primes, the number n, and the ratio of these
+##two quantities. Test this for different values of n. 
+
+import math
+
+p = 1
+i = 1
+a = 3
+# first prime is two (i=1) so start testing at p = 3
+
+n = 1000
+logSum = math.log(2)
+
+while (i<n) :
+
+    p = p + 2       # test new p   
+    a = 3           # reset a
+
+    while (a<(p/a)) :    #only need to check half of the values
+        
+        if (p%a == 0) :     # if TRUE -> NOT PRIME 
+            p = p + 2   # test new p
+            a = 3       # reset a
+            
+        else : a = a+2       # if FALSE increase a to next odd num
+        
+    # a reaches p -> p == prime
+    i = i+1
+
+    logSum = logSum + math.log(p)   #Add log(p) to sum of logs
+    
+    
+print 'logSum = ',logSum, n,'th prime = ', p , 'Ratio = ', logSum/p
