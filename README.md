@@ -1,3 +1,7 @@
 # MIT-Introduction-to-Computer-Science-and-Programming
-My solutions to the assignments MIT's 6.00 course as taught in Fall 2008. 
+As Taught In Fall 2008 Instructor(s): Prof. Eric Grimson Prof. John Guttag
+
 https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00-introduction-to-computer-science-and-programming-fall-2008/index.htm
+
+These are my solutions to the assignments
+Work in Progress 
